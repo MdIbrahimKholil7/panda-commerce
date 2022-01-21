@@ -8,12 +8,42 @@
 html{
     font-size: 62.5%;
 }
-body{
+/* body{
     overflow-x: hidden;
+} */
+.hamburger{
+    position: relative;
 }
 .nav-height{
     height: 8rem;
 }
+#check{
+    display: none;
+}
+.bar-menu{
+    font-size:3rem;
+    color: #fff;
+    display: none;
+}
+ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+ul li{
+    list-style: none;
+
+}
+ul li a{
+    color:#fff;
+    font-size: 1.7rem;
+    text-decoration:none;
+    margin: 2rem;
+}
+
+
+
 .backg-gradient{
     background-color:#2f2b64e0;
     padding: 20px 0;
@@ -72,6 +102,66 @@ body{
     color: #fff;
     
 }
+footer{
+    padding: 3rem 0;
+    color: #fff;
+    font-size: 1.6rem;
+    text-align: center;
+    background: #000;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+footer p{
+    margin-bottom: 0;
+}
+@media screen and (min-width:200px) and (max-width:768px){
+    .bar-menu{
+        display: block;
+    }
+    ul{
+        width:70%;
+        height: 100vh;
+        background:rgb(30, 49, 68);
+        flex-direction: column;
+        padding: 5rem 0;
+        position: absolute;
+        top:8rem;
+        left: -600%;
+        display: block;
+        transition: .4s ease-in-out;
+    }
+
+    #check:checked ~ ul{
+        width:60%;
+        height: 100vh;
+        background:rgba(30, 49, 68, 0.938);
+        flex-direction: column;
+        padding: 5rem 0;
+        position: absolute;
+        top:8rem;
+        left:0;
+        display: block;
+        
+    }
+
+    ul li{
+       
+        margin:3rem;
+        
+    }
+    ul li a{
+        padding: 1rem 0;
+        display: block;
+        /* background: #2f2b64e0; */
+        width: 100%;
+        text-align: center;
+    }
+
+
+}
+
+
 
 
 @media screen and (min-width:576px) and (max-width:768px){
@@ -84,13 +174,22 @@ body{
         text-align:center;
     }
 }
-/* @media screen and (min-width:310px) and (max-width:575px){
+@media screen and (min-width:310px) and (max-width:575px){
     
     .banner-details{
-        padding:6rem 0;
+        padding:6rem .7rem;
         
     }
     .banner-full-details{
         text-align:center;
     }
-} */
+}
+@media screen and (min-width:310px) and (max-width:767px){
+    
+    .slider-height{
+    
+        height: calc(100vh - 8rem);
+        min-height:calc(100vh - 8rem) ;
+        padding: 2rem 0;
+    }
+}
