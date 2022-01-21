@@ -8,6 +8,9 @@
 html{
     font-size: 62.5%;
 }
+body{
+    overflow-x: hidden;
+}
 .nav-height{
     height: 8rem;
 }
@@ -28,7 +31,9 @@ html{
 
 
 .slider-height{
+    
     height: calc(100vh - 8rem);
+    min-height:calc(100vh - 8rem) ;
 }
 /* btn style  */
 .panda-btn{
@@ -42,6 +47,32 @@ html{
     background-color: rgba(0,0,0,0.5);
     background-blend-mode: overlay;
 }
+#catagories{
+    margin-top:5rem;
+}
+.catagories{
+    padding: 3rem 3rem;
+}
+
+.catagories img{
+    width:100px;
+}
+.message-section{
+    height:60vh;
+    min-height:60vh;
+    margin-top: 13rem;
+}
+.message-p{
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+.message-h1{
+    font-size: 3.6rem;
+    color: #fff;
+    
+}
+
 
 @media screen and (min-width:576px) and (max-width:768px){
     
@@ -53,3 +84,13 @@ html{
         text-align:center;
     }
 }
+/* @media screen and (min-width:310px) and (max-width:575px){
+    
+    .banner-details{
+        padding:6rem 0;
+        
+    }
+    .banner-full-details{
+        text-align:center;
+    }
+} */
