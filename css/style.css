@@ -122,19 +122,19 @@ footer p{
     ul{
         width:70%;
         height: 100vh;
-        background:rgb(30, 49, 68);
+        background:#1e3144;
         flex-direction: column;
         padding: 5rem 0;
         position: absolute;
         top:8rem;
         left: -600%;
         display: block;
-        transition: .4s ease-in-out;
+        transition: .3s ease-in-out;
     }
 
     #check:checked ~ ul{
         width:60%;
-        height: 100vh;
+        height:calc(100vh - 8rem);
         background:rgba(30, 49, 68, 0.938);
         flex-direction: column;
         padding: 5rem 0;
@@ -142,7 +142,7 @@ footer p{
         top:8rem;
         left:0;
         display: block;
-        
+        transition: .3s ease-in-out;
     }
 
     ul li{
